@@ -11,19 +11,125 @@
     "href": "activities/README.html",
     "title": "Activities",
     "section": "",
-    "text": "All activities live here.",
-    "crumbs": [
-      "Activities"
-    ]
+    "text": "All activities live here."
   },
   {
     "objectID": "notes/README.html",
     "href": "notes/README.html",
     "title": "Notes",
     "section": "",
-    "text": "All notes live here.",
-    "crumbs": [
-      "Notes"
-    ]
+    "text": "All notes live here."
+  },
+  {
+    "objectID": "activities/activity-03.html",
+    "href": "activities/activity-03.html",
+    "title": "3  Activity 03",
+    "section": "",
+    "text": "4 Exercise 6"
+  },
+  {
+    "objectID": "activities/activity-03.html#a",
+    "href": "activities/activity-03.html#a",
+    "title": "3  Activity 03",
+    "section": "9.1 a",
+    "text": "9.1 a"
+  },
+  {
+    "objectID": "activities/activity-03.html#the-purpose-of-is-adding-an-other-function-to-the-original-one.",
+    "href": "activities/activity-03.html#the-purpose-of-is-adding-an-other-function-to-the-original-one.",
+    "title": "3  Activity 03",
+    "section": "9.2 The purpose of ‘+’ is adding an other function to the original one.",
+    "text": "9.2 The purpose of ‘+’ is adding an other function to the original one."
+  },
+  {
+    "objectID": "activities/activity-03.html#because-it-is-a-geometic-graph.",
+    "href": "activities/activity-03.html#because-it-is-a-geometic-graph.",
+    "title": "3  Activity 03",
+    "section": "9.3 Because it is a geometic graph.",
+    "text": "9.3 Because it is a geometic graph."
+  },
+  {
+    "objectID": "activities/activity-03.html#they-give-names-to-the-axis.",
+    "href": "activities/activity-03.html#they-give-names-to-the-axis.",
+    "title": "3  Activity 03",
+    "section": "9.4 They give names to the axis.",
+    "text": "9.4 They give names to the axis."
+  },
+  {
+    "objectID": "activities/activity-03.html#color-gives-edges-color-fill-gives-the-bar-color.",
+    "href": "activities/activity-03.html#color-gives-edges-color-fill-gives-the-bar-color.",
+    "title": "3  Activity 03",
+    "section": "9.5 Color gives edges color, fill gives the bar color.",
+    "text": "9.5 Color gives edges color, fill gives the bar color."
+  },
+  {
+    "objectID": "activities/activity-03.html#b",
+    "href": "activities/activity-03.html#b",
+    "title": "3  Activity 03",
+    "section": "9.6 b",
+    "text": "9.6 b"
+  },
+  {
+    "objectID": "activities/activity-03.html#we-can-learn-that-most-hikes-have-rating-moderate-and-hikes-with-rating-of-difficult-and-easy-are-similar-there-are-slightly-more-easy-hikes.",
+    "href": "activities/activity-03.html#we-can-learn-that-most-hikes-have-rating-moderate-and-hikes-with-rating-of-difficult-and-easy-are-similar-there-are-slightly-more-easy-hikes.",
+    "title": "3  Activity 03",
+    "section": "9.7 We can learn that most hikes have rating moderate, and hikes with rating of difficult and easy are similar, there are slightly more easy hikes.",
+    "text": "9.7 We can learn that most hikes have rating moderate, and hikes with rating of difficult and easy are similar, there are slightly more easy hikes."
+  },
+  {
+    "objectID": "activities/activity-03.html#c",
+    "href": "activities/activity-03.html#c",
+    "title": "3  Activity 03",
+    "section": "9.8 c",
+    "text": "9.8 c"
+  },
+  {
+    "objectID": "activities/activity-03.html#the-label-of-x-axis-can-be-rate-of-hikes-and-it-should-have-a-sequence-of-low-moderate-difficult.",
+    "href": "activities/activity-03.html#the-label-of-x-axis-can-be-rate-of-hikes-and-it-should-have-a-sequence-of-low-moderate-difficult.",
+    "title": "3  Activity 03",
+    "section": "9.9 The label of x axis can be “rate of hikes”, and it should have a sequence of “low, moderate, difficult”.",
+    "text": "9.9 The label of x axis can be “rate of hikes”, and it should have a sequence of “low, moderate, difficult”."
+  },
+  {
+    "objectID": "activities/activity-03.html#exercise-1",
+    "href": "activities/activity-03.html#exercise-1",
+    "title": "3  Data viz",
+    "section": "3.1 Exercise 1",
+    "text": "3.1 Exercise 1\n\nhead(hikes)\n\n             peak elevation difficulty ascent length time    rating\n1     Mt. Marcy        5344          5   3166   14.8 10.0  moderate\n2 Algonquin Peak       5114          5   2936    9.6  9.0  moderate\n3   Mt. Haystack       4960          7   3570   17.8 12.0 difficult\n4   Mt. Skylight       4926          7   4265   17.9 15.0 difficult\n5 Whiteface Mtn.       4867          4   2535   10.4  8.5      easy\n6       Dix Mtn.       4857          5   2800   13.2 10.0  moderate"
+  },
+  {
+    "objectID": "activities/activity-03.html#exercise-2",
+    "href": "activities/activity-03.html#exercise-2",
+    "title": "3  Data viz",
+    "section": "3.2 Exercise 2",
+    "text": "3.2 Exercise 2\n\n# Load the package\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "activities/activity-03.html#exercise-3",
+    "href": "activities/activity-03.html#exercise-3",
+    "title": "3  Data viz",
+    "section": "3.3 Exercise 3",
+    "text": "3.3 Exercise 3\n\nggplot(hikes, aes(x = rating))"
+  },
+  {
+    "objectID": "activities/activity-03.html#exercise-4",
+    "href": "activities/activity-03.html#exercise-4",
+    "title": "3  Data viz",
+    "section": "3.4 Exercise 4",
+    "text": "3.4 Exercise 4\n\n# added '+ geom_bar()', bars appeared in the plot\nggplot(hikes, aes(x = rating)) +\n  geom_bar()\n\n\n\n# added 'y = \"Number of hikes\"', the y-axis has a name\nggplot(hikes, aes(x = rating)) +\n  geom_bar() +\n  labs(x = \"Rating\", y = \"Number of hikes\")\n\n\n\n# added '+geom_bar(fill = \"blue\")', the bars become blue\nggplot(hikes, aes(x = rating)) +\n  geom_bar(fill = \"blue\") +\n  labs(x = \"Rating\", y = \"Number of hikes\")\n\n\n\n# added 'color = \"orange\"', and the bars have orange edges\nggplot(hikes, aes(x = rating)) +\n  geom_bar(color = \"orange\", fill = \"blue\") +\n  labs(x = \"Rating\", y = \"Number of hikes\")\n\n\n\n# added '+ theme_minimal()', the color of background changed\nggplot(hikes, aes(x = rating)) +\n  geom_bar(color = \"orange\", fill = \"blue\")  +\n  labs(x = \"Rating\", y = \"Number of hikes\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "activities/activity-03.html#exercise-5",
+    "href": "activities/activity-03.html#exercise-5",
+    "title": "3  Data viz",
+    "section": "3.5 Exercise 5",
+    "text": "3.5 Exercise 5\n\n3.5.1 a\n\n3.5.1.1 The purpose of ‘+’ is adding an other function to the original one.\n\n\n3.5.1.2 Because it is a geometic graph.\n\n\n3.5.1.3 They give names to the axis.\n\n\n3.5.1.4 Color gives edges color, fill gives the bar color.\n\n\n\n3.5.2 b\n\n3.5.2.1 We can learn that most hikes have rating moderate, and hikes with rating of difficult and easy are similar, there are slightly more easy hikes.\n\n\n\n3.5.3 c\n\n3.5.3.1 The label of x axis can be “rate of hikes”, and it should have a sequence of “low, moderate, difficult”."
+  },
+  {
+    "objectID": "activities/activity-03.html#exercise-6",
+    "href": "activities/activity-03.html#exercise-6",
+    "title": "3  Data viz",
+    "section": "3.6 Exercise 6",
+    "text": "3.6 Exercise 6"
   }
 ]

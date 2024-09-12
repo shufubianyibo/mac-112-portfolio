@@ -1,4 +1,87 @@
 ---
-title: "Activity 03"
+title: "Data viz"
 ---
+
+
+```{r}
+# Import data
+hikes <- read.csv("https://mac-stat.github.io/data/high_peaks.csv")
+```
+
+
+## Exercise 1
+```{r}
+head(hikes)
+```
+
+
+## Exercise 2
+```{r}
+
+# Load the package
+library(tidyverse)
+
+```
+
+
+## Exercise 3
+```{r}
+ggplot(hikes, aes(x = rating))
+```
+
+## Exercise 4
+```{r}
+# added '+ geom_bar()', bars appeared in the plot
+ggplot(hikes, aes(x = rating)) +
+  geom_bar()
+
+# added 'y = "Number of hikes"', the y-axis has a name
+ggplot(hikes, aes(x = rating)) +
+  geom_bar() +
+  labs(x = "Rating", y = "Number of hikes")
+
+# added '+geom_bar(fill = "blue")', the bars become blue
+ggplot(hikes, aes(x = rating)) +
+  geom_bar(fill = "blue") +
+  labs(x = "Rating", y = "Number of hikes")
+
+# added 'color = "orange"', and the bars have orange edges
+ggplot(hikes, aes(x = rating)) +
+  geom_bar(color = "orange", fill = "blue") +
+  labs(x = "Rating", y = "Number of hikes")
+
+# added '+ theme_minimal()', the color of background changed
+ggplot(hikes, aes(x = rating)) +
+  geom_bar(color = "orange", fill = "blue")  +
+  labs(x = "Rating", y = "Number of hikes") +
+  theme_minimal()
+```
+
+## Exercise 5
+### a
+#### The purpose of '+' is adding an other function to the original one.
+#### Because it is a geometic graph.
+#### They give names to the axis.
+#### Color gives edges color, fill gives the bar color.
+
+### b
+#### We can learn that most hikes have rating moderate, and hikes with rating of difficult and easy are similar, there are slightly more easy hikes.
+
+### c
+#### The label of x axis can be "rate of hikes", and it should have a sequence of "low, moderate, difficult".
+
+## Exercise 6
+
+
+
+
+
+
+
+
+
+
+
+
+
 
