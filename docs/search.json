@@ -130,6 +130,76 @@
     "href": "activities/activity-03.html#exercise-6",
     "title": "3  Data viz",
     "section": "3.6 Exercise 6",
-    "text": "3.6 Exercise 6"
+    "text": "3.6 Exercise 6\n\nggplot(hikes, aes(x = elevation)) +\n  geom_bar(fill = \"blue\")  +\n  labs(x = \"elevation\", y = \"Number of hikes\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "activities/activity-03.html#exercise-7",
+    "href": "activities/activity-03.html#exercise-7",
+    "title": "3  Data viz",
+    "section": "3.7 Exercise 7",
+    "text": "3.7 Exercise 7\n\n3.7.1 a\n\n3.7.1.1 About 6.\n\n\n3.7.1.2 About 2.\n\n\n\n3.7.2 b\n\n3.7.2.1 The center of data is about 4300, and the data spaned from about 3700 to 5500. It is a little bit left-shifted."
+  },
+  {
+    "objectID": "activities/activity-03.html#exercise-8-9",
+    "href": "activities/activity-03.html#exercise-8-9",
+    "title": "3  Data viz",
+    "section": "3.8 Exercise 8 & 9",
+    "text": "3.8 Exercise 8 & 9\n\nggplot(hikes, aes(x = elevation))\n\n\n\n\n\n# added \"+ geom_histogram()\", bars appeared.\nggplot(hikes, aes(x = elevation)) +\n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n# added 'color = \"white\"' for histogram, white edges between bars appeared.\nggplot(hikes, aes(x = elevation)) +\n  geom_histogram(color = \"white\") \n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n# added 'fill = \"blue\"' for histogram, the bars became blue.\nggplot(hikes, aes(x = elevation)) +\n  geom_histogram(color = \"white\", fill = \"blue\") \n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n# added code for labels, the labels appeared.\nggplot(hikes, aes(x = elevation)) +\n  geom_histogram(color = \"white\") +\n  labs(x = \"Elevation (feet)\", y = \"Number of hikes\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n# added \"binwidth = 1000\" for histogram, the bars became very wide.\nggplot(hikes, aes(x = elevation)) +\n  geom_histogram(color = \"white\", binwidth = 1000) +\n  labs(x = \"Elevation (feet)\", y = \"Number of hikes\")\n\n\n\n# added \"binwidth = 5\" for histogram, the bars became very thin.\nggplot(hikes, aes(x = elevation)) +\n  geom_histogram(color = \"white\", binwidth = 5) +\n  labs(x = \"Elevation (feet)\", y = \"Number of hikes\")\n\n\n\n# added \"binwidth = 200\" for histogram, the bars became medimum.\nggplot(hikes, aes(x = elevation)) +\n  geom_histogram(color = \"white\", binwidth = 200) +\n  labs(x = \"Elevation (feet)\", y = \"Number of hikes\")"
+  },
+  {
+    "objectID": "activities/activity-03.html#exercise-10",
+    "href": "activities/activity-03.html#exercise-10",
+    "title": "3  Data viz",
+    "section": "3.9 Exercise 10",
+    "text": "3.9 Exercise 10"
+  },
+  {
+    "objectID": "activities/activity-04.html",
+    "href": "activities/activity-04.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "activities/activity-04.html#exercise-1",
+    "href": "activities/activity-04.html#exercise-1",
+    "title": "4  Bivariate viz",
+    "section": "4.1 Exercise 1",
+    "text": "4.1 Exercise 1\nWe need dataset, the two variables show up in the plot, and the ggplot functions. geom_point might give this plot."
+  },
+  {
+    "objectID": "activities/activity-04.html#exercise-2",
+    "href": "activities/activity-04.html#exercise-2",
+    "title": "4  Bivariate viz",
+    "section": "4.2 Exercise 2",
+    "text": "4.2 Exercise 2\n\n# Set up the plotting frame\n# How does this differ than the frame for our histogram of repub_pct_20 alone? \n# It has two axis with numbers.\nggplot(elections, aes(y = repub_pct_20, x = repub_pct_16))\n\n\n\n# Add a layer of points for each county\n# The points show up is the frame.\nggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +\n  geom_point()\n\n\n\n# Change the shape of the points\n# The shape of the points become stars\nggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +\n  geom_point(shape = 3)\n\n\n\n# YOU TRY: Modify the code to make the points \"orange\"\n# NOTE: Try to anticipate if \"color\" or \"fill\" will be useful here. Then try both.\nggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +\n  geom_point(color = \"orange\")\n\n\n\n# Add a layer that represents each county by the state it's in\n# The points become the names of the states, it isn't very tidy.\nggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +\n  geom_text(aes(label = state_abbr))"
+  },
+  {
+    "objectID": "activities/activity-04.html#exercise-3",
+    "href": "activities/activity-04.html#exercise-3",
+    "title": "4  Bivariate viz",
+    "section": "4.3 Exercise 3",
+    "text": "4.3 Exercise 3\n\n4.3.1 It is a strong positive relation, there are some Taxes points have higher repub_pct_20."
+  },
+  {
+    "objectID": "activities/activity-04.html#exercise-4",
+    "href": "activities/activity-04.html#exercise-4",
+    "title": "4  Bivariate viz",
+    "section": "4.4 Exercise 4",
+    "text": "4.4 Exercise 4\n\nggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +\n  geom_point() +\n  geom_smooth()\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\n\n4.4.1 a\n\nggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +\n  geom_smooth()\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\n\n\n4.4.2 b\n\nggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "activities/activity-04.html#exercise-5",
+    "href": "activities/activity-04.html#exercise-5",
+    "title": "4  Bivariate viz",
+    "section": "4.5 Exercise 5",
+    "text": "4.5 Exercise 5\n\n# Scatterplot of repub_pct_20 vs median_rent\nggplot(elections, aes(y = repub_pct_20, x = median_rent)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n# Scatterplot of repub_pct_20 vs median_age\nggplot(elections, aes(y = repub_pct_20, x = median_age)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\nThese two scatterplots don’t show strong relation, and the points don’t display linearly. repub_pct_20 vs median_age has a weak positive association, and repub_pct_20 vs median_rent has a negative association that is stranger than repub_pct_20 vs median_age."
+  },
+  {
+    "objectID": "activities/activity-04.html#exercise-6",
+    "href": "activities/activity-04.html#exercise-6",
+    "title": "4  Bivariate viz",
+    "section": "4.6 Exercise 6",
+    "text": "4.6 Exercise 6\n\nggplot(elections, aes(y = repub_pct_20, x = historical)) +\n  geom_point()\n\n\n\n\nIt is a categorical variable, the points only shows on exactly three places on x-axis."
   }
 ]

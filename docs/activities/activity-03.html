@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../notes/README.html" rel="next">
+<link href="../activities/activity-04.html" rel="next">
 <link href="../activities/activity-02.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -172,6 +172,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data viz</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../activities/activity-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">activity-04.html</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -186,13 +192,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../notes/note-01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Note 01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Note 01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../notes/note-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Note 02</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Note 02</span></span></a>
   </div>
 </li>
       </ul>
@@ -218,6 +224,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#c" id="toc-c" class="nav-link" data-scroll-target="#c"><span class="header-section-number">3.5.3</span> c</a></li>
   </ul></li>
   <li><a href="#exercise-6" id="toc-exercise-6" class="nav-link" data-scroll-target="#exercise-6"><span class="header-section-number">3.6</span> Exercise 6</a></li>
+  <li><a href="#exercise-7" id="toc-exercise-7" class="nav-link" data-scroll-target="#exercise-7"><span class="header-section-number">3.7</span> Exercise 7</a>
+  <ul class="collapse">
+  <li><a href="#a-1" id="toc-a-1" class="nav-link" data-scroll-target="#a-1"><span class="header-section-number">3.7.1</span> a</a></li>
+  <li><a href="#b-1" id="toc-b-1" class="nav-link" data-scroll-target="#b-1"><span class="header-section-number">3.7.2</span> b</a></li>
+  </ul></li>
+  <li><a href="#exercise-8-9" id="toc-exercise-8-9" class="nav-link" data-scroll-target="#exercise-8-9"><span class="header-section-number">3.8</span> Exercise 8 &amp; 9</a></li>
+  <li><a href="#exercise-10" id="toc-exercise-10" class="nav-link" data-scroll-target="#exercise-10"><span class="header-section-number">3.9</span> Exercise 10</a></li>
   </ul>
 </nav>
     </div>
@@ -360,6 +373,105 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="exercise-6" class="level2" data-number="3.6">
 <h2 data-number="3.6" class="anchored" data-anchor-id="exercise-6"><span class="header-section-number">3.6</span> Exercise 6</h2>
+<div class="cell" data-hash="activity-03_cache/html/unnamed-chunk-6_767a96ecb1ea7cb5d743e1e9b49f400c">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"blue"</span>)  <span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"elevation"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>) <span class="sc">+</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="activity-03_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="exercise-7" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="exercise-7"><span class="header-section-number">3.7</span> Exercise 7</h2>
+<section id="a-1" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="a-1"><span class="header-section-number">3.7.1</span> a</h3>
+<section id="about-6." class="level4" data-number="3.7.1.1">
+<h4 data-number="3.7.1.1" class="anchored" data-anchor-id="about-6."><span class="header-section-number">3.7.1.1</span> About 6.</h4>
+</section>
+<section id="about-2." class="level4" data-number="3.7.1.2">
+<h4 data-number="3.7.1.2" class="anchored" data-anchor-id="about-2."><span class="header-section-number">3.7.1.2</span> About 2.</h4>
+</section>
+</section>
+<section id="b-1" class="level3" data-number="3.7.2">
+<h3 data-number="3.7.2" class="anchored" data-anchor-id="b-1"><span class="header-section-number">3.7.2</span> b</h3>
+<section id="the-center-of-data-is-about-4300-and-the-data-spaned-from-about-3700-to-5500.-it-is-a-little-bit-left-shifted." class="level4" data-number="3.7.2.1">
+<h4 data-number="3.7.2.1" class="anchored" data-anchor-id="the-center-of-data-is-about-4300-and-the-data-spaned-from-about-3700-to-5500.-it-is-a-little-bit-left-shifted."><span class="header-section-number">3.7.2.1</span> The center of data is about 4300, and the data spaned from about 3700 to 5500. It is a little bit left-shifted.</h4>
+</section>
+</section>
+</section>
+<section id="exercise-8-9" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="exercise-8-9"><span class="header-section-number">3.8</span> Exercise 8 &amp; 9</h2>
+<div class="cell" data-hash="activity-03_cache/html/unnamed-chunk-7_40a36c7c914767248a3e33a198f57594">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="activity-03_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell" data-hash="activity-03_cache/html/unnamed-chunk-8_8ac56f4d2382f207f4a0d45fbeb832a2">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># added "+ geom_histogram()", bars appeared.</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="activity-03_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># added 'color = "white"' for histogram, white edges between bars appeared.</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb16-3"><a href="#cb16-3"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="activity-03_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="co"># added 'fill = "blue"' for histogram, the bars became blue.</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb18-3"><a href="#cb18-3"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">fill =</span> <span class="st">"blue"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="activity-03_files/figure-html/unnamed-chunk-8-3.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="co"># added code for labels, the labels appeared.</span></span>
+<span id="cb20-2"><a href="#cb20-2"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb20-3"><a href="#cb20-3"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb20-4"><a href="#cb20-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Elevation (feet)"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="activity-03_files/figure-html/unnamed-chunk-8-4.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="co"># added "binwidth = 1000" for histogram, the bars became very wide.</span></span>
+<span id="cb22-2"><a href="#cb22-2"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb22-3"><a href="#cb22-3"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">binwidth =</span> <span class="dv">1000</span>) <span class="sc">+</span></span>
+<span id="cb22-4"><a href="#cb22-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Elevation (feet)"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="activity-03_files/figure-html/unnamed-chunk-8-5.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="co"># added "binwidth = 5" for histogram, the bars became very thin.</span></span>
+<span id="cb23-2"><a href="#cb23-2"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">binwidth =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb23-4"><a href="#cb23-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Elevation (feet)"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="activity-03_files/figure-html/unnamed-chunk-8-6.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="co"># added "binwidth = 200" for histogram, the bars became medimum.</span></span>
+<span id="cb24-2"><a href="#cb24-2"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb24-3"><a href="#cb24-3"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">binwidth =</span> <span class="dv">200</span>) <span class="sc">+</span></span>
+<span id="cb24-4"><a href="#cb24-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Elevation (feet)"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="activity-03_files/figure-html/unnamed-chunk-8-7.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="exercise-10" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="exercise-10"><span class="header-section-number">3.9</span> Exercise 10</h2>
 
 
 <!-- -->
@@ -658,96 +770,151 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notes/README.html" class="pagination-link">
-        <span class="nav-page-text">Notes</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../activities/activity-04.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">activity-04.html</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb12" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">---</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a><span class="an">title:</span><span class="co"> "Data viz"</span></span>
-<span id="cb12-3"><a href="#cb12-3"></a><span class="co">---</span></span>
-<span id="cb12-4"><a href="#cb12-4"></a></span>
-<span id="cb12-5"><a href="#cb12-5"></a></span>
-<span id="cb12-8"><a href="#cb12-8"></a><span class="in">```{r}</span></span>
-<span id="cb12-9"><a href="#cb12-9"></a><span class="co"># Import data</span></span>
-<span id="cb12-10"><a href="#cb12-10"></a>hikes <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://mac-stat.github.io/data/high_peaks.csv"</span>)</span>
-<span id="cb12-11"><a href="#cb12-11"></a><span class="in">```</span></span>
-<span id="cb12-12"><a href="#cb12-12"></a></span>
-<span id="cb12-13"><a href="#cb12-13"></a></span>
-<span id="cb12-14"><a href="#cb12-14"></a><span class="fu">## Exercise 1</span></span>
-<span id="cb12-17"><a href="#cb12-17"></a><span class="in">```{r}</span></span>
-<span id="cb12-18"><a href="#cb12-18"></a><span class="fu">head</span>(hikes)</span>
-<span id="cb12-19"><a href="#cb12-19"></a><span class="in">```</span></span>
-<span id="cb12-20"><a href="#cb12-20"></a></span>
-<span id="cb12-21"><a href="#cb12-21"></a></span>
-<span id="cb12-22"><a href="#cb12-22"></a><span class="fu">## Exercise 2</span></span>
-<span id="cb12-25"><a href="#cb12-25"></a><span class="in">```{r}</span></span>
-<span id="cb12-26"><a href="#cb12-26"></a><span class="co"># Load the package</span></span>
-<span id="cb12-27"><a href="#cb12-27"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb12-28"><a href="#cb12-28"></a></span>
-<span id="cb12-29"><a href="#cb12-29"></a><span class="in">```</span></span>
-<span id="cb12-30"><a href="#cb12-30"></a></span>
-<span id="cb12-31"><a href="#cb12-31"></a></span>
-<span id="cb12-32"><a href="#cb12-32"></a><span class="fu">## Exercise 3</span></span>
-<span id="cb12-35"><a href="#cb12-35"></a><span class="in">```{r}</span></span>
-<span id="cb12-36"><a href="#cb12-36"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating))</span>
-<span id="cb12-37"><a href="#cb12-37"></a><span class="in">```</span></span>
-<span id="cb12-38"><a href="#cb12-38"></a></span>
-<span id="cb12-39"><a href="#cb12-39"></a><span class="fu">## Exercise 4</span></span>
-<span id="cb12-42"><a href="#cb12-42"></a><span class="in">```{r}</span></span>
-<span id="cb12-43"><a href="#cb12-43"></a><span class="co"># added '+ geom_bar()', bars appeared in the plot</span></span>
-<span id="cb12-44"><a href="#cb12-44"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
-<span id="cb12-45"><a href="#cb12-45"></a>  <span class="fu">geom_bar</span>()</span>
-<span id="cb12-46"><a href="#cb12-46"></a></span>
-<span id="cb12-47"><a href="#cb12-47"></a><span class="co"># added 'y = "Number of hikes"', the y-axis has a name</span></span>
-<span id="cb12-48"><a href="#cb12-48"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
-<span id="cb12-49"><a href="#cb12-49"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
-<span id="cb12-50"><a href="#cb12-50"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Rating"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span>
-<span id="cb12-51"><a href="#cb12-51"></a></span>
-<span id="cb12-52"><a href="#cb12-52"></a><span class="co"># added '+geom_bar(fill = "blue")', the bars become blue</span></span>
-<span id="cb12-53"><a href="#cb12-53"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
-<span id="cb12-54"><a href="#cb12-54"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb12-55"><a href="#cb12-55"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Rating"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span>
-<span id="cb12-56"><a href="#cb12-56"></a></span>
-<span id="cb12-57"><a href="#cb12-57"></a><span class="co"># added 'color = "orange"', and the bars have orange edges</span></span>
-<span id="cb12-58"><a href="#cb12-58"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
-<span id="cb12-59"><a href="#cb12-59"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"orange"</span>, <span class="at">fill =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb12-60"><a href="#cb12-60"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Rating"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span>
-<span id="cb12-61"><a href="#cb12-61"></a></span>
-<span id="cb12-62"><a href="#cb12-62"></a><span class="co"># added '+ theme_minimal()', the color of background changed</span></span>
-<span id="cb12-63"><a href="#cb12-63"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
-<span id="cb12-64"><a href="#cb12-64"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"orange"</span>, <span class="at">fill =</span> <span class="st">"blue"</span>)  <span class="sc">+</span></span>
-<span id="cb12-65"><a href="#cb12-65"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Rating"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>) <span class="sc">+</span></span>
-<span id="cb12-66"><a href="#cb12-66"></a>  <span class="fu">theme_minimal</span>()</span>
-<span id="cb12-67"><a href="#cb12-67"></a><span class="in">```</span></span>
-<span id="cb12-68"><a href="#cb12-68"></a></span>
-<span id="cb12-69"><a href="#cb12-69"></a><span class="fu">## Exercise 5</span></span>
-<span id="cb12-70"><a href="#cb12-70"></a><span class="fu">### a</span></span>
-<span id="cb12-71"><a href="#cb12-71"></a><span class="fu">#### The purpose of '+' is adding an other function to the original one.</span></span>
-<span id="cb12-72"><a href="#cb12-72"></a><span class="fu">#### Because it is a geometic graph.</span></span>
-<span id="cb12-73"><a href="#cb12-73"></a><span class="fu">#### They give names to the axis.</span></span>
-<span id="cb12-74"><a href="#cb12-74"></a><span class="fu">#### Color gives edges color, fill gives the bar color.</span></span>
-<span id="cb12-75"><a href="#cb12-75"></a></span>
-<span id="cb12-76"><a href="#cb12-76"></a><span class="fu">### b</span></span>
-<span id="cb12-77"><a href="#cb12-77"></a><span class="fu">#### We can learn that most hikes have rating moderate, and hikes with rating of difficult and easy are similar, there are slightly more easy hikes.</span></span>
-<span id="cb12-78"><a href="#cb12-78"></a></span>
-<span id="cb12-79"><a href="#cb12-79"></a><span class="fu">### c</span></span>
-<span id="cb12-80"><a href="#cb12-80"></a><span class="fu">#### The label of x axis can be "rate of hikes", and it should have a sequence of "low, moderate, difficult".</span></span>
-<span id="cb12-81"><a href="#cb12-81"></a></span>
-<span id="cb12-82"><a href="#cb12-82"></a><span class="fu">## Exercise 6</span></span>
-<span id="cb12-83"><a href="#cb12-83"></a></span>
-<span id="cb12-84"><a href="#cb12-84"></a></span>
-<span id="cb12-85"><a href="#cb12-85"></a></span>
-<span id="cb12-86"><a href="#cb12-86"></a></span>
-<span id="cb12-87"><a href="#cb12-87"></a></span>
-<span id="cb12-88"><a href="#cb12-88"></a></span>
-<span id="cb12-89"><a href="#cb12-89"></a></span>
-<span id="cb12-90"><a href="#cb12-90"></a></span>
-<span id="cb12-91"><a href="#cb12-91"></a></span>
-<span id="cb12-92"><a href="#cb12-92"></a></span>
-<span id="cb12-93"><a href="#cb12-93"></a></span>
-<span id="cb12-94"><a href="#cb12-94"></a></span>
-<span id="cb12-95"><a href="#cb12-95"></a></span>
+<div class="sourceCode" id="cb25" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1"></a><span class="co">---</span></span>
+<span id="cb25-2"><a href="#cb25-2"></a><span class="an">title:</span><span class="co"> "Data viz"</span></span>
+<span id="cb25-3"><a href="#cb25-3"></a><span class="co">---</span></span>
+<span id="cb25-4"><a href="#cb25-4"></a></span>
+<span id="cb25-5"><a href="#cb25-5"></a></span>
+<span id="cb25-8"><a href="#cb25-8"></a><span class="in">```{r}</span></span>
+<span id="cb25-9"><a href="#cb25-9"></a><span class="co"># Import data</span></span>
+<span id="cb25-10"><a href="#cb25-10"></a>hikes <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://mac-stat.github.io/data/high_peaks.csv"</span>)</span>
+<span id="cb25-11"><a href="#cb25-11"></a><span class="in">```</span></span>
+<span id="cb25-12"><a href="#cb25-12"></a></span>
+<span id="cb25-13"><a href="#cb25-13"></a></span>
+<span id="cb25-14"><a href="#cb25-14"></a><span class="fu">## Exercise 1</span></span>
+<span id="cb25-17"><a href="#cb25-17"></a><span class="in">```{r}</span></span>
+<span id="cb25-18"><a href="#cb25-18"></a><span class="fu">head</span>(hikes)</span>
+<span id="cb25-19"><a href="#cb25-19"></a><span class="in">```</span></span>
+<span id="cb25-20"><a href="#cb25-20"></a></span>
+<span id="cb25-21"><a href="#cb25-21"></a></span>
+<span id="cb25-22"><a href="#cb25-22"></a><span class="fu">## Exercise 2</span></span>
+<span id="cb25-25"><a href="#cb25-25"></a><span class="in">```{r}</span></span>
+<span id="cb25-26"><a href="#cb25-26"></a><span class="co"># Load the package</span></span>
+<span id="cb25-27"><a href="#cb25-27"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb25-28"><a href="#cb25-28"></a></span>
+<span id="cb25-29"><a href="#cb25-29"></a><span class="in">```</span></span>
+<span id="cb25-30"><a href="#cb25-30"></a></span>
+<span id="cb25-31"><a href="#cb25-31"></a></span>
+<span id="cb25-32"><a href="#cb25-32"></a><span class="fu">## Exercise 3</span></span>
+<span id="cb25-35"><a href="#cb25-35"></a><span class="in">```{r}</span></span>
+<span id="cb25-36"><a href="#cb25-36"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating))</span>
+<span id="cb25-37"><a href="#cb25-37"></a><span class="in">```</span></span>
+<span id="cb25-38"><a href="#cb25-38"></a></span>
+<span id="cb25-39"><a href="#cb25-39"></a><span class="fu">## Exercise 4</span></span>
+<span id="cb25-42"><a href="#cb25-42"></a><span class="in">```{r}</span></span>
+<span id="cb25-43"><a href="#cb25-43"></a><span class="co"># added '+ geom_bar()', bars appeared in the plot</span></span>
+<span id="cb25-44"><a href="#cb25-44"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
+<span id="cb25-45"><a href="#cb25-45"></a>  <span class="fu">geom_bar</span>()</span>
+<span id="cb25-46"><a href="#cb25-46"></a></span>
+<span id="cb25-47"><a href="#cb25-47"></a><span class="co"># added 'y = "Number of hikes"', the y-axis has a name</span></span>
+<span id="cb25-48"><a href="#cb25-48"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
+<span id="cb25-49"><a href="#cb25-49"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb25-50"><a href="#cb25-50"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Rating"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span>
+<span id="cb25-51"><a href="#cb25-51"></a></span>
+<span id="cb25-52"><a href="#cb25-52"></a><span class="co"># added '+geom_bar(fill = "blue")', the bars become blue</span></span>
+<span id="cb25-53"><a href="#cb25-53"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
+<span id="cb25-54"><a href="#cb25-54"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb25-55"><a href="#cb25-55"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Rating"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span>
+<span id="cb25-56"><a href="#cb25-56"></a></span>
+<span id="cb25-57"><a href="#cb25-57"></a><span class="co"># added 'color = "orange"', and the bars have orange edges</span></span>
+<span id="cb25-58"><a href="#cb25-58"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
+<span id="cb25-59"><a href="#cb25-59"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"orange"</span>, <span class="at">fill =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb25-60"><a href="#cb25-60"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Rating"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span>
+<span id="cb25-61"><a href="#cb25-61"></a></span>
+<span id="cb25-62"><a href="#cb25-62"></a><span class="co"># added '+ theme_minimal()', the color of background changed</span></span>
+<span id="cb25-63"><a href="#cb25-63"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> rating)) <span class="sc">+</span></span>
+<span id="cb25-64"><a href="#cb25-64"></a>  <span class="fu">geom_bar</span>(<span class="at">color =</span> <span class="st">"orange"</span>, <span class="at">fill =</span> <span class="st">"blue"</span>)  <span class="sc">+</span></span>
+<span id="cb25-65"><a href="#cb25-65"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Rating"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>) <span class="sc">+</span></span>
+<span id="cb25-66"><a href="#cb25-66"></a>  <span class="fu">theme_minimal</span>()</span>
+<span id="cb25-67"><a href="#cb25-67"></a><span class="in">```</span></span>
+<span id="cb25-68"><a href="#cb25-68"></a></span>
+<span id="cb25-69"><a href="#cb25-69"></a><span class="fu">## Exercise 5</span></span>
+<span id="cb25-70"><a href="#cb25-70"></a><span class="fu">### a</span></span>
+<span id="cb25-71"><a href="#cb25-71"></a><span class="fu">#### The purpose of '+' is adding an other function to the original one.</span></span>
+<span id="cb25-72"><a href="#cb25-72"></a><span class="fu">#### Because it is a geometic graph.</span></span>
+<span id="cb25-73"><a href="#cb25-73"></a><span class="fu">#### They give names to the axis.</span></span>
+<span id="cb25-74"><a href="#cb25-74"></a><span class="fu">#### Color gives edges color, fill gives the bar color.</span></span>
+<span id="cb25-75"><a href="#cb25-75"></a></span>
+<span id="cb25-76"><a href="#cb25-76"></a><span class="fu">### b</span></span>
+<span id="cb25-77"><a href="#cb25-77"></a><span class="fu">#### We can learn that most hikes have rating moderate, and hikes with rating of difficult and easy are similar, there are slightly more easy hikes.</span></span>
+<span id="cb25-78"><a href="#cb25-78"></a></span>
+<span id="cb25-79"><a href="#cb25-79"></a><span class="fu">### c</span></span>
+<span id="cb25-80"><a href="#cb25-80"></a><span class="fu">#### The label of x axis can be "rate of hikes", and it should have a sequence of "low, moderate, difficult".</span></span>
+<span id="cb25-81"><a href="#cb25-81"></a></span>
+<span id="cb25-82"><a href="#cb25-82"></a><span class="fu">## Exercise 6</span></span>
+<span id="cb25-83"><a href="#cb25-83"></a></span>
+<span id="cb25-86"><a href="#cb25-86"></a><span class="in">```{r}</span></span>
+<span id="cb25-87"><a href="#cb25-87"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb25-88"><a href="#cb25-88"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"blue"</span>)  <span class="sc">+</span></span>
+<span id="cb25-89"><a href="#cb25-89"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"elevation"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>) <span class="sc">+</span></span>
+<span id="cb25-90"><a href="#cb25-90"></a>  <span class="fu">theme_minimal</span>()</span>
+<span id="cb25-91"><a href="#cb25-91"></a><span class="in">```</span></span>
+<span id="cb25-92"><a href="#cb25-92"></a></span>
+<span id="cb25-93"><a href="#cb25-93"></a></span>
+<span id="cb25-94"><a href="#cb25-94"></a><span class="fu">## Exercise 7</span></span>
+<span id="cb25-95"><a href="#cb25-95"></a></span>
+<span id="cb25-96"><a href="#cb25-96"></a><span class="fu">### a</span></span>
+<span id="cb25-97"><a href="#cb25-97"></a><span class="fu">#### About 6.</span></span>
+<span id="cb25-98"><a href="#cb25-98"></a><span class="fu">#### About 2.</span></span>
+<span id="cb25-99"><a href="#cb25-99"></a></span>
+<span id="cb25-100"><a href="#cb25-100"></a><span class="fu">### b</span></span>
+<span id="cb25-101"><a href="#cb25-101"></a><span class="fu">#### The center of data is about 4300, and the data spaned from about 3700 to 5500. It is a little bit left-shifted.</span></span>
+<span id="cb25-102"><a href="#cb25-102"></a></span>
+<span id="cb25-103"><a href="#cb25-103"></a></span>
+<span id="cb25-104"><a href="#cb25-104"></a><span class="fu">## Exercise 8 &amp; 9</span></span>
+<span id="cb25-105"><a href="#cb25-105"></a></span>
+<span id="cb25-108"><a href="#cb25-108"></a><span class="in">```{r}</span></span>
+<span id="cb25-109"><a href="#cb25-109"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation))</span>
+<span id="cb25-110"><a href="#cb25-110"></a><span class="in">```</span></span>
+<span id="cb25-113"><a href="#cb25-113"></a><span class="in">```{r}</span></span>
+<span id="cb25-114"><a href="#cb25-114"></a><span class="co"># added "+ geom_histogram()", bars appeared.</span></span>
+<span id="cb25-115"><a href="#cb25-115"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb25-116"><a href="#cb25-116"></a>  <span class="fu">geom_histogram</span>()</span>
+<span id="cb25-117"><a href="#cb25-117"></a></span>
+<span id="cb25-118"><a href="#cb25-118"></a><span class="co"># added 'color = "white"' for histogram, white edges between bars appeared.</span></span>
+<span id="cb25-119"><a href="#cb25-119"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb25-120"><a href="#cb25-120"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>) </span>
+<span id="cb25-121"><a href="#cb25-121"></a></span>
+<span id="cb25-122"><a href="#cb25-122"></a><span class="co"># added 'fill = "blue"' for histogram, the bars became blue.</span></span>
+<span id="cb25-123"><a href="#cb25-123"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb25-124"><a href="#cb25-124"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">fill =</span> <span class="st">"blue"</span>) </span>
+<span id="cb25-125"><a href="#cb25-125"></a></span>
+<span id="cb25-126"><a href="#cb25-126"></a><span class="co"># added code for labels, the labels appeared.</span></span>
+<span id="cb25-127"><a href="#cb25-127"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb25-128"><a href="#cb25-128"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb25-129"><a href="#cb25-129"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Elevation (feet)"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span>
+<span id="cb25-130"><a href="#cb25-130"></a></span>
+<span id="cb25-131"><a href="#cb25-131"></a><span class="co"># added "binwidth = 1000" for histogram, the bars became very wide.</span></span>
+<span id="cb25-132"><a href="#cb25-132"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb25-133"><a href="#cb25-133"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">binwidth =</span> <span class="dv">1000</span>) <span class="sc">+</span></span>
+<span id="cb25-134"><a href="#cb25-134"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Elevation (feet)"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span>
+<span id="cb25-135"><a href="#cb25-135"></a></span>
+<span id="cb25-136"><a href="#cb25-136"></a><span class="co"># added "binwidth = 5" for histogram, the bars became very thin.</span></span>
+<span id="cb25-137"><a href="#cb25-137"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb25-138"><a href="#cb25-138"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">binwidth =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb25-139"><a href="#cb25-139"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Elevation (feet)"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span>
+<span id="cb25-140"><a href="#cb25-140"></a></span>
+<span id="cb25-141"><a href="#cb25-141"></a><span class="co"># added "binwidth = 200" for histogram, the bars became medimum.</span></span>
+<span id="cb25-142"><a href="#cb25-142"></a><span class="fu">ggplot</span>(hikes, <span class="fu">aes</span>(<span class="at">x =</span> elevation)) <span class="sc">+</span></span>
+<span id="cb25-143"><a href="#cb25-143"></a>  <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"white"</span>, <span class="at">binwidth =</span> <span class="dv">200</span>) <span class="sc">+</span></span>
+<span id="cb25-144"><a href="#cb25-144"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Elevation (feet)"</span>, <span class="at">y =</span> <span class="st">"Number of hikes"</span>)</span>
+<span id="cb25-145"><a href="#cb25-145"></a><span class="in">```</span></span>
+<span id="cb25-146"><a href="#cb25-146"></a></span>
+<span id="cb25-147"><a href="#cb25-147"></a></span>
+<span id="cb25-148"><a href="#cb25-148"></a><span class="fu">## Exercise 10</span></span>
+<span id="cb25-149"><a href="#cb25-149"></a></span>
+<span id="cb25-150"><a href="#cb25-150"></a></span>
+<span id="cb25-151"><a href="#cb25-151"></a></span>
+<span id="cb25-152"><a href="#cb25-152"></a></span>
+<span id="cb25-153"><a href="#cb25-153"></a></span>
+<span id="cb25-154"><a href="#cb25-154"></a></span>
+<span id="cb25-155"><a href="#cb25-155"></a></span>
+<span id="cb25-156"><a href="#cb25-156"></a></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

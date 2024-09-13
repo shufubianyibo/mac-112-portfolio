@@ -72,10 +72,65 @@ ggplot(hikes, aes(x = rating)) +
 
 ## Exercise 6
 
+```{r}
+ggplot(hikes, aes(x = elevation)) +
+  geom_bar(fill = "blue")  +
+  labs(x = "elevation", y = "Number of hikes") +
+  theme_minimal()
+```
 
 
+## Exercise 7
+
+### a
+#### About 6.
+#### About 2.
+
+### b
+#### The center of data is about 4300, and the data spaned from about 3700 to 5500. It is a little bit left-shifted.
 
 
+## Exercise 8 & 9
+
+```{r}
+ggplot(hikes, aes(x = elevation))
+```
+```{r}
+# added "+ geom_histogram()", bars appeared.
+ggplot(hikes, aes(x = elevation)) +
+  geom_histogram()
+
+# added 'color = "white"' for histogram, white edges between bars appeared.
+ggplot(hikes, aes(x = elevation)) +
+  geom_histogram(color = "white") 
+
+# added 'fill = "blue"' for histogram, the bars became blue.
+ggplot(hikes, aes(x = elevation)) +
+  geom_histogram(color = "white", fill = "blue") 
+
+# added code for labels, the labels appeared.
+ggplot(hikes, aes(x = elevation)) +
+  geom_histogram(color = "white") +
+  labs(x = "Elevation (feet)", y = "Number of hikes")
+
+# added "binwidth = 1000" for histogram, the bars became very wide.
+ggplot(hikes, aes(x = elevation)) +
+  geom_histogram(color = "white", binwidth = 1000) +
+  labs(x = "Elevation (feet)", y = "Number of hikes")
+
+# added "binwidth = 5" for histogram, the bars became very thin.
+ggplot(hikes, aes(x = elevation)) +
+  geom_histogram(color = "white", binwidth = 5) +
+  labs(x = "Elevation (feet)", y = "Number of hikes")
+
+# added "binwidth = 200" for histogram, the bars became medimum.
+ggplot(hikes, aes(x = elevation)) +
+  geom_histogram(color = "white", binwidth = 200) +
+  labs(x = "Elevation (feet)", y = "Number of hikes")
+```
+
+
+## Exercise 10
 
 
 

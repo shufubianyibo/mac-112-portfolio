@@ -1,0 +1,132 @@
+---
+title: "Bivariate viz"
+---
+```{r}
+library(tidyverse)
+```
+
+```{r}
+# Load data
+elections <- read.csv("https://mac-stat.github.io/data/election_2020_county.csv")
+# Check it out
+head(elections)
+```
+
+
+## Exercise 1
+
+We need dataset, the two variables show up in the plot, and the ggplot functions. geom_point might give this plot.
+
+## Exercise 2
+
+```{r}
+# Set up the plotting frame
+# How does this differ than the frame for our histogram of repub_pct_20 alone? 
+# It has two axis with numbers.
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16))
+
+# Add a layer of points for each county
+# The points show up is the frame.
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_point()
+
+# Change the shape of the points
+# The shape of the points become stars
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_point(shape = 3)
+
+# YOU TRY: Modify the code to make the points "orange"
+# NOTE: Try to anticipate if "color" or "fill" will be useful here. Then try both.
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_point(color = "orange")
+
+# Add a layer that represents each county by the state it's in
+# The points become the names of the states, it isn't very tidy.
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_text(aes(label = state_abbr))
+```
+
+## Exercise 3
+### It is a strong positive relation, there are some Taxes points have higher repub_pct_20.
+
+## Exercise 4
+```{r}
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_point() +
+  geom_smooth()
+```
+
+
+### a
+```{r}
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_smooth()
+```
+
+### b
+```{r}
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+
+## Exercise 5
+
+```{r}
+# Scatterplot of repub_pct_20 vs median_rent
+ggplot(elections, aes(y = repub_pct_20, x = median_rent)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+
+
+# Scatterplot of repub_pct_20 vs median_age
+ggplot(elections, aes(y = repub_pct_20, x = median_age)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+These two scatterplots don't show strong relation, and the points don't display linearly. repub_pct_20 vs median_age has a weak positive association, and repub_pct_20 vs median_rent has a negative association that is stranger than repub_pct_20 vs median_age. 
+
+
+## Exercise 6
+
+```{r}
+ggplot(elections, aes(y = repub_pct_20, x = historical)) +
+  geom_point()
+```
+It is a categorical variable, the points only shows on exactly three places on x-axis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
