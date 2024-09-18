@@ -1,0 +1,85 @@
+---
+title: "Multivariate Viz"
+---
+```{r}
+library(tidyverse)
+```
+
+```{r}
+# Import and check out data
+education <- read.csv("https://mac-stat.github.io/data/sat.csv")
+head(education)
+```
+
+## Exercise 1
+### (a)
+```{r}
+ggplot(education, aes(x=sat)) +
+  geom_density()
+```
+
+### (b)
+The range of score is from about 840 to 1110, the typical outcome is around 900 and the plot is left-shifted.
+
+
+## Exercise 2
+
+### (a)
+```{r}
+# Construct a plot of sat vs expend
+# Include a "best fit linear regression model" (HINT: method = "lm")
+lm(data = education, sat ~ expend)
+ggplot(education, aes(x = expend, y = sat)) +
+  geom_point() +
+  geom_abline(intercept = 1089.29, slope = -20.89)
+```
+```{r}
+# Construct a plot of sat vs salary
+# Include a "best fit linear regression model" (HINT: method = "lm")
+ggplot(education, aes(x = expend, y = salary)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+### (b)
+The higher expend on pupil, the lower the sat score, and the higher the salary for teachers, the higher the sat score. It is surprising that students will get lower score when there are more money spend on them.
+
+
+## Exercise 3
+```{r}
+ggplot(education, aes(x = expend, y = sat, color = salary)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+
+## Exercise 4
+
+```{r}
+ggplot(education, aes(y = sat, x = salary, color = cut(expend, 2))) + 
+  geom_point() + 
+  geom_smooth(se = FALSE, method = "lm")
+
+ggplot(education, aes(y = sat, x = salary, color = cut(expend, 3))) + 
+  geom_point() + 
+  geom_smooth(se = FALSE, method = "lm")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

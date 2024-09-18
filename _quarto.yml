@@ -17,6 +17,7 @@ book:
       - activities/activity-02.qmd
       - activities/activity-03.qmd
       - activities/activity-04.qmd
+      - activities/activity-05.qmd
     
     - part: notes/README.qmd
       chapters: 

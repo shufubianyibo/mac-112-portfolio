@@ -201,5 +201,40 @@
     "title": "4  Bivariate viz",
     "section": "4.6 Exercise 6",
     "text": "4.6 Exercise 6\n\nggplot(elections, aes(y = repub_pct_20, x = historical)) +\n  geom_point()\n\n\n\n\nIt is a categorical variable, the points only shows on exactly three places on x-axis."
+  },
+  {
+    "objectID": "activities/activity-05.html",
+    "href": "activities/activity-05.html",
+    "title": "5  Multivariate Viz",
+    "section": "",
+    "text": "library(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\n6 Exercise 1"
+  },
+  {
+    "objectID": "activities/activity-05.html#exercise-1",
+    "href": "activities/activity-05.html#exercise-1",
+    "title": "5  Multivariate Viz",
+    "section": "5.1 Exercise 1",
+    "text": "5.1 Exercise 1\n\n5.1.1 (a)\n\nggplot(education, aes(x=sat)) +\n  geom_density()\n\n\n\n\n\n\n5.1.2 (b)\nThe range of score is from about 840 to 1110, the typical outcome is around 900 and the plot is left-shifted."
+  },
+  {
+    "objectID": "activities/activity-05.html#exercise-2",
+    "href": "activities/activity-05.html#exercise-2",
+    "title": "5  Multivariate Viz",
+    "section": "5.2 Exercise 2",
+    "text": "5.2 Exercise 2\n\n5.2.1 (a)\n\n# Construct a plot of sat vs expend\n# Include a \"best fit linear regression model\" (HINT: method = \"lm\")\nlm(data = education, sat ~ expend)\n\n\nCall:\nlm(formula = sat ~ expend, data = education)\n\nCoefficients:\n(Intercept)       expend  \n    1089.29       -20.89  \n\nggplot(education, aes(x = expend, y = sat)) +\n  geom_point() +\n  geom_abline(intercept = 1089.29, slope = -20.89)\n\n\n\n\n\n# Construct a plot of sat vs salary\n# Include a \"best fit linear regression model\" (HINT: method = \"lm\")\nggplot(education, aes(x = expend, y = salary)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n5.2.2 (b)\nThe higher expend on pupil, the lower the sat score, and the higher the salary for teachers, the higher the sat score. It is surprising that students will get lower score when there are more money spend on them."
+  },
+  {
+    "objectID": "activities/activity-05.html#exercise-3",
+    "href": "activities/activity-05.html#exercise-3",
+    "title": "5  Multivariate Viz",
+    "section": "5.3 Exercise 3",
+    "text": "5.3 Exercise 3\n\nggplot(education, aes(x = expend, y = sat, color = salary)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: The following aesthetics were dropped during statistical transformation:\ncolour.\nℹ This can happen when ggplot fails to infer the correct grouping structure in\n  the data.\nℹ Did you forget to specify a `group` aesthetic or to convert a numerical\n  variable into a factor?"
+  },
+  {
+    "objectID": "activities/activity-05.html#exercise-4",
+    "href": "activities/activity-05.html#exercise-4",
+    "title": "5  Multivariate Viz",
+    "section": "5.4 Exercise 4",
+    "text": "5.4 Exercise 4\n\nggplot(education, aes(y = sat, x = salary, color = cut(expend, 2))) + \n  geom_point() + \n  geom_smooth(se = FALSE, method = \"lm\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nggplot(education, aes(y = sat, x = salary, color = cut(expend, 3))) + \n  geom_point() + \n  geom_smooth(se = FALSE, method = \"lm\")\n\n`geom_smooth()` using formula = 'y ~ x'"
   }
 ]
