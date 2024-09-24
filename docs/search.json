@@ -236,5 +236,19 @@
     "title": "5  Multivariate Viz",
     "section": "5.4 Exercise 4",
     "text": "5.4 Exercise 4\n\nggplot(education, aes(y = sat, x = salary, color = cut(expend, 2))) + \n  geom_point() + \n  geom_smooth(se = FALSE, method = \"lm\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nggplot(education, aes(y = sat, x = salary, color = cut(expend, 3))) + \n  geom_point() + \n  geom_smooth(se = FALSE, method = \"lm\")\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "activities/activity-07.html#exercise-1",
+    "href": "activities/activity-07.html#exercise-1",
+    "title": "6  Effective viz",
+    "section": "6.1 Exercise 1",
+    "text": "6.1 Exercise 1\n\n6.1.1 a\n\nggplot(weather, aes(y = temp3pm, x = temp9am, color = location)) + \n  geom_point() + \n  labs(x = \"Temperature at 9 am (Celsius)\", y = \"Temperature at 3 pm (Celsius)\", title = \"The Relation between Temp3pm and Temp9am in Different Cities in Australia\", color = \"Location\")  \n\nWarning: Removed 103 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n6.1.2 b\n“The Relation between Temp3pm and Temp9am in Different Cities in Australia”\n\nggplot(weather, aes(y = temp3pm, x = temp9am, color = location)) + \n  geom_point() + \n  labs(x = \"Temperature at 9 am (Celsius)\", y = \"Temperature at 3 pm (Celsius)\", color = \"Location\")  \n\nWarning: Removed 103 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+  },
+  {
+    "objectID": "activities/activity-07.html#exercise-2",
+    "href": "activities/activity-07.html#exercise-2",
+    "title": "6  Effective viz",
+    "section": "6.2 Exercise 2",
+    "text": "6.2 Exercise 2\n\nggplot(weather, aes(x = temp3pm, fill = location)) + \n  geom_density(alpha = 0.5) + \n  labs(x = \"3pm temperature (Celsius)\")  \n\nWarning: Removed 57 rows containing non-finite outside the scale range\n(`stat_density()`).\n\n\n\n\n\n\n6.2.1 a\nIt is the distribution of 3pm temperature of 3 cities in Australia.\n\nggplot(weather, aes(x = temp3pm, fill = location)) + \n  geom_density(alpha = 0.5) + \n  labs(x = \"3pm temperature (Celsius)\")  \n\nWarning: Removed 57 rows containing non-finite outside the scale range\n(`stat_density()`).\n\n\n\n\n\n\n\n6.2.2 b\nHobart and Uluru will be too similar too each other.\n\n\n6.2.3 c\n\nggplot(weather, aes(x = temp3pm, fill = location)) + \n  geom_density(alpha = 0.5) + \n  labs(x = \"3pm temperature (Celsius)\") + \n  scale_fill_viridis_d()    \n\nWarning: Removed 57 rows containing non-finite outside the scale range\n(`stat_density()`)."
   }
 ]

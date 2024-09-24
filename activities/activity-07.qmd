@@ -1,0 +1,88 @@
+---
+title: "Effective viz"
+---
+
+```{r}
+library(tidyverse)
+library(rattle)
+data(weatherAUS)
+```
+
+```{r}
+weather <- weatherAUS %>% 
+  filter(Location %in% c("Hobart", "Uluru", "Wollongong")) %>% 
+  mutate(temp9am = Temp9am, temp3pm = Temp3pm, location = Location) 
+```
+
+
+## Exercise 1
+### a
+```{r}
+ggplot(weather, aes(y = temp3pm, x = temp9am, color = location)) + 
+  geom_point() + 
+  labs(x = "Temperature at 9 am (Celsius)", y = "Temperature at 3 pm (Celsius)", title = "The Relation between Temp3pm and Temp9am in Different Cities in Australia", color = "Location")  
+```
+
+
+### b
+"The Relation between Temp3pm and Temp9am in Different Cities in Australia"
+```{r}
+ggplot(weather, aes(y = temp3pm, x = temp9am, color = location)) + 
+  geom_point() + 
+  labs(x = "Temperature at 9 am (Celsius)", y = "Temperature at 3 pm (Celsius)", color = "Location")  
+```
+
+
+## Exercise 2
+
+```{r}
+ggplot(weather, aes(x = temp3pm, fill = location)) + 
+  geom_density(alpha = 0.5) + 
+  labs(x = "3pm temperature (Celsius)")  
+```
+
+### a
+It is the distribution of 3pm temperature of 3 cities in Australia.
+
+```{r, fig.alt = "distribution of 3pm temperature of 3 cities in Australia"}
+ggplot(weather, aes(x = temp3pm, fill = location)) + 
+  geom_density(alpha = 0.5) + 
+  labs(x = "3pm temperature (Celsius)")  
+```
+
+### b
+Hobart and Uluru will be too similar too each other.
+
+### c
+```{r}
+ggplot(weather, aes(x = temp3pm, fill = location)) + 
+  geom_density(alpha = 0.5) + 
+  labs(x = "3pm temperature (Celsius)") + 
+  scale_fill_viridis_d()    
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

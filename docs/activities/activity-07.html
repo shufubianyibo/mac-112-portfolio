@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>COMP/STAT112 Notebook - 5&nbsp; Multivariate Viz</title>
+<title>COMP/STAT112 Notebook - 6&nbsp; Effective viz</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../activities/activity-07.html" rel="next">
-<link href="../activities/activity-04.html" rel="prev">
+<link href="../notes/README.html" rel="next">
+<link href="../activities/activity-05.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -107,7 +107,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../activities/README.html">Activities</a></li><li class="breadcrumb-item"><a href="../activities/activity-05.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Multivariate Viz</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../activities/README.html">Activities</a></li><li class="breadcrumb-item"><a href="../activities/activity-07.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Effective viz</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -180,13 +180,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../activities/activity-05.html" class="sidebar-item-text sidebar-link active">
+  <a href="../activities/activity-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Multivariate Viz</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../activities/activity-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../activities/activity-07.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Effective viz</span></span></a>
   </div>
 </li>
@@ -225,18 +225,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link active" data-scroll-target="#exercise-1"><span class="header-section-number">5.1</span> Exercise 1</a>
+  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link active" data-scroll-target="#exercise-1"><span class="header-section-number">6.1</span> Exercise 1</a>
   <ul class="collapse">
-  <li><a href="#a" id="toc-a" class="nav-link" data-scroll-target="#a"><span class="header-section-number">5.1.1</span> (a)</a></li>
-  <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b"><span class="header-section-number">5.1.2</span> (b)</a></li>
+  <li><a href="#a" id="toc-a" class="nav-link" data-scroll-target="#a"><span class="header-section-number">6.1.1</span> a</a></li>
+  <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b"><span class="header-section-number">6.1.2</span> b</a></li>
   </ul></li>
-  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2"><span class="header-section-number">5.2</span> Exercise 2</a>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2"><span class="header-section-number">6.2</span> Exercise 2</a>
   <ul class="collapse">
-  <li><a href="#a-1" id="toc-a-1" class="nav-link" data-scroll-target="#a-1"><span class="header-section-number">5.2.1</span> (a)</a></li>
-  <li><a href="#b-1" id="toc-b-1" class="nav-link" data-scroll-target="#b-1"><span class="header-section-number">5.2.2</span> (b)</a></li>
+  <li><a href="#a-1" id="toc-a-1" class="nav-link" data-scroll-target="#a-1"><span class="header-section-number">6.2.1</span> a</a></li>
+  <li><a href="#b-1" id="toc-b-1" class="nav-link" data-scroll-target="#b-1"><span class="header-section-number">6.2.2</span> b</a></li>
+  <li><a href="#c" id="toc-c" class="nav-link" data-scroll-target="#c"><span class="header-section-number">6.2.3</span> c</a></li>
   </ul></li>
-  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3"><span class="header-section-number">5.3</span> Exercise 3</a></li>
-  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4"><span class="header-section-number">5.4</span> Exercise 4</a></li>
   </ul>
 </nav>
     </div>
@@ -245,7 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Multivariate Viz</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Effective viz</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -260,7 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<div class="cell" data-hash="activity-05_cache/html/unnamed-chunk-1_7f643234e7c1a562899d10598cdbdb35">
+<div class="cell" data-hash="activity-07_cache/html/unnamed-chunk-1_307142f2699c4d22c3ef69c0731323ad">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
@@ -274,129 +273,113 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-</div>
-<div class="cell" data-hash="activity-05_cache/html/unnamed-chunk-2_1a745b6d550c7c8580304148ac56f04b">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Import and check out data</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>education <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://mac-stat.github.io/data/sat.csv"</span>)</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">head</span>(education)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>       State expend ratio salary frac verbal math  sat  fracCat
-1    Alabama  4.405  17.2 31.144    8    491  538 1029   (0,15]
-2     Alaska  8.963  17.6 47.951   47    445  489  934 (45,100]
-3    Arizona  4.778  19.3 32.175   27    448  496  944  (15,45]
-4   Arkansas  4.459  17.1 28.934    6    482  523 1005   (0,15]
-5 California  4.992  24.0 41.078   45    417  485  902  (15,45]
-6   Colorado  5.443  18.4 34.571   29    462  518  980  (15,45]</code></pre>
-</div>
-</div>
-<section id="exercise-1" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="exercise-1"><span class="header-section-number">5.1</span> Exercise 1</h2>
-<section id="a" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="a"><span class="header-section-number">5.1.1</span> (a)</h3>
-<div class="cell" data-hash="activity-05_cache/html/unnamed-chunk-3_9842970a8d6a71d9c2e4555adbee8364">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">x=</span>sat)) <span class="sc">+</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="activity-05_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-</section>
-<section id="b" class="level3" data-number="5.1.2">
-<h3 data-number="5.1.2" class="anchored" data-anchor-id="b"><span class="header-section-number">5.1.2</span> (b)</h3>
-<p>The range of score is from about 840 to 1110, the typical outcome is around 900 and the plot is left-shifted.</p>
-</section>
-</section>
-<section id="exercise-2" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="exercise-2"><span class="header-section-number">5.2</span> Exercise 2</h2>
-<section id="a-1" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="a-1"><span class="header-section-number">5.2.1</span> (a)</h3>
-<div class="cell" data-hash="activity-05_cache/html/unnamed-chunk-4_7ebfae016aa50e7fe5b51c2b55cdf4e0">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Construct a plot of sat vs expend</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="co"># Include a "best fit linear regression model" (HINT: method = "lm")</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="fu">lm</span>(<span class="at">data =</span> education, sat <span class="sc">~</span> expend)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-lm(formula = sat ~ expend, data = education)
-
-Coefficients:
-(Intercept)       expend  
-    1089.29       -20.89  </code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">x =</span> expend, <span class="at">y =</span> sat)) <span class="sc">+</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">geom_abline</span>(<span class="at">intercept =</span> <span class="fl">1089.29</span>, <span class="at">slope =</span> <span class="sc">-</span><span class="fl">20.89</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="activity-05_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<div class="cell" data-hash="activity-05_cache/html/unnamed-chunk-5_3e15ce50825eca676edeffb30ec47733">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Construct a plot of sat vs salary</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="co"># Include a "best fit linear regression model" (HINT: method = "lm")</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">x =</span> expend, <span class="at">y =</span> salary)) <span class="sc">+</span></span>
-<span id="cb9-4"><a href="#cb9-4"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb9-5"><a href="#cb9-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(rattle)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
-<div class="cell-output-display">
-<p><img src="activity-05_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-</section>
-<section id="b-1" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="b-1"><span class="header-section-number">5.2.2</span> (b)</h3>
-<p>The higher expend on pupil, the lower the sat score, and the higher the salary for teachers, the higher the sat score. It is surprising that students will get lower score when there are more money spend on them.</p>
-</section>
-</section>
-<section id="exercise-3" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="exercise-3"><span class="header-section-number">5.3</span> Exercise 3</h2>
-<div class="cell" data-hash="activity-05_cache/html/unnamed-chunk-6_ac85af402c594a0340d04f1d821f213e">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">x =</span> expend, <span class="at">y =</span> sat, <span class="at">color =</span> salary)) <span class="sc">+</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb11-3"><a href="#cb11-3"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+<pre><code>Loading required package: bitops</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: The following aesthetics were dropped during statistical transformation:
-colour.
-ℹ This can happen when ggplot fails to infer the correct grouping structure in
-  the data.
-ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
-  variable into a factor?</code></pre>
+<pre><code>Warning: package 'bitops' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rattle: A free graphical interface for data science with R.
+Version 5.5.1 Copyright (c) 2006-2021 Togaware Pty Ltd.
+Type 'rattle()' to shake, rattle, and roll your data.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">data</span>(weatherAUS)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="activity-07_cache/html/unnamed-chunk-2_2d8f823848bf82a4a7adedb5908f850c">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>weather <span class="ot">&lt;-</span> weatherAUS <span class="sc">%&gt;%</span> </span>
+<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">filter</span>(Location <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Hobart"</span>, <span class="st">"Uluru"</span>, <span class="st">"Wollongong"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">mutate</span>(<span class="at">temp9am =</span> Temp9am, <span class="at">temp3pm =</span> Temp3pm, <span class="at">location =</span> Location) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="exercise-1" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="exercise-1"><span class="header-section-number">6.1</span> Exercise 1</h2>
+<section id="a" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="a"><span class="header-section-number">6.1.1</span> a</h3>
+<div class="cell" data-hash="activity-07_cache/html/unnamed-chunk-3_e33e67514ddf14eec9ee392115e0b7fe">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">ggplot</span>(weather, <span class="fu">aes</span>(<span class="at">y =</span> temp3pm, <span class="at">x =</span> temp9am, <span class="at">color =</span> location)) <span class="sc">+</span> </span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Temperature at 9 am (Celsius)"</span>, <span class="at">y =</span> <span class="st">"Temperature at 3 pm (Celsius)"</span>, <span class="at">title =</span> <span class="st">"The Relation between Temp3pm and Temp9am in Different Cities in Australia"</span>, <span class="at">color =</span> <span class="st">"Location"</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 103 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="activity-05_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+<p><img src="activity-07_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
-<section id="exercise-4" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="exercise-4"><span class="header-section-number">5.4</span> Exercise 4</h2>
-<div class="cell" data-hash="activity-05_cache/html/unnamed-chunk-7_fbe13611f699856971b3c432bef7000e">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">y =</span> sat, <span class="at">x =</span> salary, <span class="at">color =</span> <span class="fu">cut</span>(expend, <span class="dv">2</span>))) <span class="sc">+</span> </span>
-<span id="cb14-2"><a href="#cb14-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb14-3"><a href="#cb14-3"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">method =</span> <span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="b" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="b"><span class="header-section-number">6.1.2</span> b</h3>
+<p>“The Relation between Temp3pm and Temp9am in Different Cities in Australia”</p>
+<div class="cell" data-hash="activity-07_cache/html/unnamed-chunk-4_96c7d25f76190ea2dc0ff046308846d3">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">ggplot</span>(weather, <span class="fu">aes</span>(<span class="at">y =</span> temp3pm, <span class="at">x =</span> temp9am, <span class="at">color =</span> location)) <span class="sc">+</span> </span>
+<span id="cb11-2"><a href="#cb11-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb11-3"><a href="#cb11-3"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Temperature at 9 am (Celsius)"</span>, <span class="at">y =</span> <span class="st">"Temperature at 3 pm (Celsius)"</span>, <span class="at">color =</span> <span class="st">"Location"</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+<pre><code>Warning: Removed 103 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="activity-05_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+<p><img src="activity-07_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">y =</span> sat, <span class="at">x =</span> salary, <span class="at">color =</span> <span class="fu">cut</span>(expend, <span class="dv">3</span>))) <span class="sc">+</span> </span>
-<span id="cb16-2"><a href="#cb16-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb16-3"><a href="#cb16-3"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">method =</span> <span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="exercise-2" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="exercise-2"><span class="header-section-number">6.2</span> Exercise 2</h2>
+<div class="cell" data-hash="activity-07_cache/html/unnamed-chunk-5_06866e652beb9d7ce16e9223a91fce43">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">ggplot</span>(weather, <span class="fu">aes</span>(<span class="at">x =</span> temp3pm, <span class="at">fill =</span> location)) <span class="sc">+</span> </span>
+<span id="cb13-2"><a href="#cb13-2"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb13-3"><a href="#cb13-3"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"3pm temperature (Celsius)"</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+<pre><code>Warning: Removed 57 rows containing non-finite outside the scale range
+(`stat_density()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="activity-05_files/figure-html/unnamed-chunk-7-2.png" class="img-fluid" width="672"></p>
+<p><img src="activity-07_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<section id="a-1" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="a-1"><span class="header-section-number">6.2.1</span> a</h3>
+<p>It is the distribution of 3pm temperature of 3 cities in Australia.</p>
+<div class="cell" data-hash="activity-07_cache/html/unnamed-chunk-6_cc751258eaafffb543c31c4e3da8ab93">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">ggplot</span>(weather, <span class="fu">aes</span>(<span class="at">x =</span> temp3pm, <span class="at">fill =</span> location)) <span class="sc">+</span> </span>
+<span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb15-3"><a href="#cb15-3"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"3pm temperature (Celsius)"</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 57 rows containing non-finite outside the scale range
+(`stat_density()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="activity-07_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" alt="distribution of 3pm temperature of 3 cities in Australia" width="672"></p>
+</div>
+</div>
+</section>
+<section id="b-1" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="b-1"><span class="header-section-number">6.2.2</span> b</h3>
+<p>Hobart and Uluru will be too similar too each other.</p>
+</section>
+<section id="c" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="c"><span class="header-section-number">6.2.3</span> c</h3>
+<div class="cell" data-hash="activity-07_cache/html/unnamed-chunk-7_460d98c43d9dd6b9869f5d4ca80f112a">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">ggplot</span>(weather, <span class="fu">aes</span>(<span class="at">x =</span> temp3pm, <span class="at">fill =</span> location)) <span class="sc">+</span> </span>
+<span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb17-3"><a href="#cb17-3"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"3pm temperature (Celsius)"</span>) <span class="sc">+</span> </span>
+<span id="cb17-4"><a href="#cb17-4"></a>  <span class="fu">scale_fill_viridis_d</span>()    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 57 rows containing non-finite outside the scale range
+(`stat_density()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="activity-07_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -686,100 +669,103 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../activities/activity-04.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bivariate viz</span></span>
+      <a href="../activities/activity-05.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Multivariate Viz</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../activities/activity-07.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Effective viz</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notes/README.html" class="pagination-link">
+        <span class="nav-page-text">Notes</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb18" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1"></a><span class="co">---</span></span>
-<span id="cb18-2"><a href="#cb18-2"></a><span class="an">title:</span><span class="co"> "Multivariate Viz"</span></span>
-<span id="cb18-3"><a href="#cb18-3"></a><span class="co">---</span></span>
-<span id="cb18-6"><a href="#cb18-6"></a><span class="in">```{r}</span></span>
-<span id="cb18-7"><a href="#cb18-7"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb18-8"><a href="#cb18-8"></a><span class="in">```</span></span>
-<span id="cb18-9"><a href="#cb18-9"></a></span>
-<span id="cb18-12"><a href="#cb18-12"></a><span class="in">```{r}</span></span>
-<span id="cb18-13"><a href="#cb18-13"></a><span class="co"># Import and check out data</span></span>
-<span id="cb18-14"><a href="#cb18-14"></a>education <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://mac-stat.github.io/data/sat.csv"</span>)</span>
-<span id="cb18-15"><a href="#cb18-15"></a><span class="fu">head</span>(education)</span>
-<span id="cb18-16"><a href="#cb18-16"></a><span class="in">```</span></span>
-<span id="cb18-17"><a href="#cb18-17"></a></span>
-<span id="cb18-18"><a href="#cb18-18"></a><span class="fu">## Exercise 1</span></span>
-<span id="cb18-19"><a href="#cb18-19"></a><span class="fu">### (a)</span></span>
-<span id="cb18-22"><a href="#cb18-22"></a><span class="in">```{r}</span></span>
-<span id="cb18-23"><a href="#cb18-23"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">x=</span>sat)) <span class="sc">+</span></span>
-<span id="cb18-24"><a href="#cb18-24"></a>  <span class="fu">geom_density</span>()</span>
-<span id="cb18-25"><a href="#cb18-25"></a><span class="in">```</span></span>
-<span id="cb18-26"><a href="#cb18-26"></a></span>
-<span id="cb18-27"><a href="#cb18-27"></a><span class="fu">### (b)</span></span>
-<span id="cb18-28"><a href="#cb18-28"></a>The range of score is from about 840 to 1110, the typical outcome is around 900 and the plot is left-shifted.</span>
-<span id="cb18-29"><a href="#cb18-29"></a></span>
-<span id="cb18-30"><a href="#cb18-30"></a></span>
-<span id="cb18-31"><a href="#cb18-31"></a><span class="fu">## Exercise 2</span></span>
-<span id="cb18-32"><a href="#cb18-32"></a></span>
-<span id="cb18-33"><a href="#cb18-33"></a><span class="fu">### (a)</span></span>
-<span id="cb18-36"><a href="#cb18-36"></a><span class="in">```{r}</span></span>
-<span id="cb18-37"><a href="#cb18-37"></a><span class="co"># Construct a plot of sat vs expend</span></span>
-<span id="cb18-38"><a href="#cb18-38"></a><span class="co"># Include a "best fit linear regression model" (HINT: method = "lm")</span></span>
-<span id="cb18-39"><a href="#cb18-39"></a><span class="fu">lm</span>(<span class="at">data =</span> education, sat <span class="sc">~</span> expend)</span>
-<span id="cb18-40"><a href="#cb18-40"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">x =</span> expend, <span class="at">y =</span> sat)) <span class="sc">+</span></span>
-<span id="cb18-41"><a href="#cb18-41"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb18-42"><a href="#cb18-42"></a>  <span class="fu">geom_abline</span>(<span class="at">intercept =</span> <span class="fl">1089.29</span>, <span class="at">slope =</span> <span class="sc">-</span><span class="fl">20.89</span>)</span>
-<span id="cb18-43"><a href="#cb18-43"></a><span class="in">```</span></span>
-<span id="cb18-46"><a href="#cb18-46"></a><span class="in">```{r}</span></span>
-<span id="cb18-47"><a href="#cb18-47"></a><span class="co"># Construct a plot of sat vs salary</span></span>
-<span id="cb18-48"><a href="#cb18-48"></a><span class="co"># Include a "best fit linear regression model" (HINT: method = "lm")</span></span>
-<span id="cb18-49"><a href="#cb18-49"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">x =</span> expend, <span class="at">y =</span> salary)) <span class="sc">+</span></span>
-<span id="cb18-50"><a href="#cb18-50"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb18-51"><a href="#cb18-51"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span>
-<span id="cb18-52"><a href="#cb18-52"></a><span class="in">```</span></span>
-<span id="cb18-53"><a href="#cb18-53"></a></span>
-<span id="cb18-54"><a href="#cb18-54"></a><span class="fu">### (b)</span></span>
-<span id="cb18-55"><a href="#cb18-55"></a>The higher expend on pupil, the lower the sat score, and the higher the salary for teachers, the higher the sat score. It is surprising that students will get lower score when there are more money spend on them.</span>
-<span id="cb18-56"><a href="#cb18-56"></a></span>
-<span id="cb18-57"><a href="#cb18-57"></a></span>
-<span id="cb18-58"><a href="#cb18-58"></a><span class="fu">## Exercise 3</span></span>
-<span id="cb18-61"><a href="#cb18-61"></a><span class="in">```{r}</span></span>
-<span id="cb18-62"><a href="#cb18-62"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">x =</span> expend, <span class="at">y =</span> sat, <span class="at">color =</span> salary)) <span class="sc">+</span></span>
-<span id="cb18-63"><a href="#cb18-63"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb18-64"><a href="#cb18-64"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span>
-<span id="cb18-65"><a href="#cb18-65"></a><span class="in">```</span></span>
-<span id="cb18-66"><a href="#cb18-66"></a></span>
-<span id="cb18-67"><a href="#cb18-67"></a></span>
-<span id="cb18-68"><a href="#cb18-68"></a><span class="fu">## Exercise 4</span></span>
-<span id="cb18-69"><a href="#cb18-69"></a></span>
-<span id="cb18-72"><a href="#cb18-72"></a><span class="in">```{r}</span></span>
-<span id="cb18-73"><a href="#cb18-73"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">y =</span> sat, <span class="at">x =</span> salary, <span class="at">color =</span> <span class="fu">cut</span>(expend, <span class="dv">2</span>))) <span class="sc">+</span> </span>
-<span id="cb18-74"><a href="#cb18-74"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb18-75"><a href="#cb18-75"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">method =</span> <span class="st">"lm"</span>)</span>
-<span id="cb18-76"><a href="#cb18-76"></a></span>
-<span id="cb18-77"><a href="#cb18-77"></a><span class="fu">ggplot</span>(education, <span class="fu">aes</span>(<span class="at">y =</span> sat, <span class="at">x =</span> salary, <span class="at">color =</span> <span class="fu">cut</span>(expend, <span class="dv">3</span>))) <span class="sc">+</span> </span>
-<span id="cb18-78"><a href="#cb18-78"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb18-79"><a href="#cb18-79"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">method =</span> <span class="st">"lm"</span>)</span>
-<span id="cb18-80"><a href="#cb18-80"></a><span class="in">```</span></span>
-<span id="cb18-81"><a href="#cb18-81"></a></span>
-<span id="cb18-82"><a href="#cb18-82"></a></span>
-<span id="cb18-83"><a href="#cb18-83"></a></span>
-<span id="cb18-84"><a href="#cb18-84"></a></span>
-<span id="cb18-85"><a href="#cb18-85"></a></span>
-<span id="cb18-86"><a href="#cb18-86"></a></span>
-<span id="cb18-87"><a href="#cb18-87"></a></span>
-<span id="cb18-88"><a href="#cb18-88"></a></span>
-<span id="cb18-89"><a href="#cb18-89"></a></span>
-<span id="cb18-90"><a href="#cb18-90"></a></span>
-<span id="cb18-91"><a href="#cb18-91"></a></span>
-<span id="cb18-92"><a href="#cb18-92"></a></span>
-<span id="cb18-93"><a href="#cb18-93"></a></span>
-<span id="cb18-94"><a href="#cb18-94"></a></span>
-<span id="cb18-95"><a href="#cb18-95"></a></span>
-<span id="cb18-96"><a href="#cb18-96"></a></span>
-<span id="cb18-97"><a href="#cb18-97"></a></span>
-<span id="cb18-98"><a href="#cb18-98"></a></span>
+<div class="sourceCode" id="cb19" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1"></a><span class="co">---</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a><span class="an">title:</span><span class="co"> "Effective viz"</span></span>
+<span id="cb19-3"><a href="#cb19-3"></a><span class="co">---</span></span>
+<span id="cb19-4"><a href="#cb19-4"></a></span>
+<span id="cb19-7"><a href="#cb19-7"></a><span class="in">```{r}</span></span>
+<span id="cb19-8"><a href="#cb19-8"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb19-9"><a href="#cb19-9"></a><span class="fu">library</span>(rattle)</span>
+<span id="cb19-10"><a href="#cb19-10"></a><span class="fu">data</span>(weatherAUS)</span>
+<span id="cb19-11"><a href="#cb19-11"></a><span class="in">```</span></span>
+<span id="cb19-12"><a href="#cb19-12"></a></span>
+<span id="cb19-15"><a href="#cb19-15"></a><span class="in">```{r}</span></span>
+<span id="cb19-16"><a href="#cb19-16"></a>weather <span class="ot">&lt;-</span> weatherAUS <span class="sc">%&gt;%</span> </span>
+<span id="cb19-17"><a href="#cb19-17"></a>  <span class="fu">filter</span>(Location <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Hobart"</span>, <span class="st">"Uluru"</span>, <span class="st">"Wollongong"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb19-18"><a href="#cb19-18"></a>  <span class="fu">mutate</span>(<span class="at">temp9am =</span> Temp9am, <span class="at">temp3pm =</span> Temp3pm, <span class="at">location =</span> Location) </span>
+<span id="cb19-19"><a href="#cb19-19"></a><span class="in">```</span></span>
+<span id="cb19-20"><a href="#cb19-20"></a></span>
+<span id="cb19-21"><a href="#cb19-21"></a></span>
+<span id="cb19-22"><a href="#cb19-22"></a><span class="fu">## Exercise 1</span></span>
+<span id="cb19-23"><a href="#cb19-23"></a><span class="fu">### a</span></span>
+<span id="cb19-26"><a href="#cb19-26"></a><span class="in">```{r}</span></span>
+<span id="cb19-27"><a href="#cb19-27"></a><span class="fu">ggplot</span>(weather, <span class="fu">aes</span>(<span class="at">y =</span> temp3pm, <span class="at">x =</span> temp9am, <span class="at">color =</span> location)) <span class="sc">+</span> </span>
+<span id="cb19-28"><a href="#cb19-28"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb19-29"><a href="#cb19-29"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Temperature at 9 am (Celsius)"</span>, <span class="at">y =</span> <span class="st">"Temperature at 3 pm (Celsius)"</span>, <span class="at">title =</span> <span class="st">"The Relation between Temp3pm and Temp9am in Different Cities in Australia"</span>, <span class="at">color =</span> <span class="st">"Location"</span>)  </span>
+<span id="cb19-30"><a href="#cb19-30"></a><span class="in">```</span></span>
+<span id="cb19-31"><a href="#cb19-31"></a></span>
+<span id="cb19-32"><a href="#cb19-32"></a></span>
+<span id="cb19-33"><a href="#cb19-33"></a><span class="fu">### b</span></span>
+<span id="cb19-34"><a href="#cb19-34"></a>"The Relation between Temp3pm and Temp9am in Different Cities in Australia"</span>
+<span id="cb19-37"><a href="#cb19-37"></a><span class="in">```{r}</span></span>
+<span id="cb19-38"><a href="#cb19-38"></a><span class="fu">ggplot</span>(weather, <span class="fu">aes</span>(<span class="at">y =</span> temp3pm, <span class="at">x =</span> temp9am, <span class="at">color =</span> location)) <span class="sc">+</span> </span>
+<span id="cb19-39"><a href="#cb19-39"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb19-40"><a href="#cb19-40"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Temperature at 9 am (Celsius)"</span>, <span class="at">y =</span> <span class="st">"Temperature at 3 pm (Celsius)"</span>, <span class="at">color =</span> <span class="st">"Location"</span>)  </span>
+<span id="cb19-41"><a href="#cb19-41"></a><span class="in">```</span></span>
+<span id="cb19-42"><a href="#cb19-42"></a></span>
+<span id="cb19-43"><a href="#cb19-43"></a></span>
+<span id="cb19-44"><a href="#cb19-44"></a><span class="fu">## Exercise 2</span></span>
+<span id="cb19-45"><a href="#cb19-45"></a></span>
+<span id="cb19-48"><a href="#cb19-48"></a><span class="in">```{r}</span></span>
+<span id="cb19-49"><a href="#cb19-49"></a><span class="fu">ggplot</span>(weather, <span class="fu">aes</span>(<span class="at">x =</span> temp3pm, <span class="at">fill =</span> location)) <span class="sc">+</span> </span>
+<span id="cb19-50"><a href="#cb19-50"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb19-51"><a href="#cb19-51"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"3pm temperature (Celsius)"</span>)  </span>
+<span id="cb19-52"><a href="#cb19-52"></a><span class="in">```</span></span>
+<span id="cb19-53"><a href="#cb19-53"></a></span>
+<span id="cb19-54"><a href="#cb19-54"></a><span class="fu">### a</span></span>
+<span id="cb19-55"><a href="#cb19-55"></a>It is the distribution of 3pm temperature of 3 cities in Australia.</span>
+<span id="cb19-56"><a href="#cb19-56"></a></span>
+<span id="cb19-57"><a href="#cb19-57"></a><span class="in">```{r, fig.alt = "distribution of 3pm temperature of 3 cities in Australia"}</span></span>
+<span id="cb19-58"><a href="#cb19-58"></a><span class="fu">ggplot</span>(weather, <span class="fu">aes</span>(<span class="at">x =</span> temp3pm, <span class="at">fill =</span> location)) <span class="sc">+</span> </span>
+<span id="cb19-59"><a href="#cb19-59"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb19-60"><a href="#cb19-60"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"3pm temperature (Celsius)"</span>)  </span>
+<span id="cb19-61"><a href="#cb19-61"></a><span class="in">```</span></span>
+<span id="cb19-62"><a href="#cb19-62"></a></span>
+<span id="cb19-63"><a href="#cb19-63"></a><span class="fu">### b</span></span>
+<span id="cb19-64"><a href="#cb19-64"></a>Hobart and Uluru will be too similar too each other.</span>
+<span id="cb19-65"><a href="#cb19-65"></a></span>
+<span id="cb19-66"><a href="#cb19-66"></a><span class="fu">### c</span></span>
+<span id="cb19-69"><a href="#cb19-69"></a><span class="in">```{r}</span></span>
+<span id="cb19-70"><a href="#cb19-70"></a><span class="fu">ggplot</span>(weather, <span class="fu">aes</span>(<span class="at">x =</span> temp3pm, <span class="at">fill =</span> location)) <span class="sc">+</span> </span>
+<span id="cb19-71"><a href="#cb19-71"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb19-72"><a href="#cb19-72"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"3pm temperature (Celsius)"</span>) <span class="sc">+</span> </span>
+<span id="cb19-73"><a href="#cb19-73"></a>  <span class="fu">scale_fill_viridis_d</span>()    </span>
+<span id="cb19-74"><a href="#cb19-74"></a><span class="in">```</span></span>
+<span id="cb19-75"><a href="#cb19-75"></a></span>
+<span id="cb19-76"><a href="#cb19-76"></a></span>
+<span id="cb19-77"><a href="#cb19-77"></a></span>
+<span id="cb19-78"><a href="#cb19-78"></a></span>
+<span id="cb19-79"><a href="#cb19-79"></a></span>
+<span id="cb19-80"><a href="#cb19-80"></a></span>
+<span id="cb19-81"><a href="#cb19-81"></a></span>
+<span id="cb19-82"><a href="#cb19-82"></a></span>
+<span id="cb19-83"><a href="#cb19-83"></a></span>
+<span id="cb19-84"><a href="#cb19-84"></a></span>
+<span id="cb19-85"><a href="#cb19-85"></a></span>
+<span id="cb19-86"><a href="#cb19-86"></a></span>
+<span id="cb19-87"><a href="#cb19-87"></a></span>
+<span id="cb19-88"><a href="#cb19-88"></a></span>
+<span id="cb19-89"><a href="#cb19-89"></a></span>
+<span id="cb19-90"><a href="#cb19-90"></a></span>
+<span id="cb19-91"><a href="#cb19-91"></a></span>
+<span id="cb19-92"><a href="#cb19-92"></a></span>
+<span id="cb19-93"><a href="#cb19-93"></a></span>
+<span id="cb19-94"><a href="#cb19-94"></a></span>
+<span id="cb19-95"><a href="#cb19-95"></a></span>
+<span id="cb19-96"><a href="#cb19-96"></a></span>
+<span id="cb19-97"><a href="#cb19-97"></a></span>
+<span id="cb19-98"><a href="#cb19-98"></a></span>
+<span id="cb19-99"><a href="#cb19-99"></a></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
