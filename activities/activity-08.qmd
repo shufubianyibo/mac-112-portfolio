@@ -4,14 +4,21 @@ Don’t start the Exercises section before we get there as a class. First, engag
 Recall the elections data by U.S. county:
 
 # Load tidyverse & data
+```{r}
 library(tidyverse)
 elections <- read.csv("https://mac-stat.github.io/data/election_2020_county.csv")
+
+```
 
 We’ve used data viz to explore some general patterns in the election outcomes. For example, a map!
 
 # Get a background map
 library(socviz)
 data(county_map)
+```{r}
+library(socviz)
+data(county_map)
+```
 
 # Make a choropleth map
 library(RColorBrewer)  # For the color scale
@@ -255,6 +262,7 @@ Use select() to create a simplified dataset that we’ll use throughout the exer
 Store this dataset as elections_small.
 Only keep the following variables: state_name, county_name, total_votes_20, repub_pct_20, dem_pct_20, total_votes_16, dem_pct_16
 ```{r}
+library(tidymodels)
 # Define elections_small
 elections_small <- elections |>
   select(state_name, county_name, total_votes_20, repub_pct_20, dem_pct_20, total_votes_16, dem_pct_16)
@@ -667,7 +675,7 @@ For more information about the topics covered in this chapter, refer to the reso
 -   [A Grammar for Data Wrangling (html)](https://mdsr-book.github.io/mdsr2e/ch-dataI.html) by Baumer, Kaplan, and Horton
 :::
 
-{{< include activity-instructions.qmd >}}
+
 
 ## Data Wrangling Motivation
 

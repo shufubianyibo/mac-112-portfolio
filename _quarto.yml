@@ -19,6 +19,9 @@ book:
       - activities/activity-04.qmd
       - activities/activity-05.qmd
       - activities/activity-07.qmd
+      - activities/activity-08.qmd
+      - activities/activity-09.qmd
+      - activities/activity-10.qmd
     
     - part: notes/README.qmd
       chapters: 
